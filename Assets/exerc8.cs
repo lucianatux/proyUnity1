@@ -21,6 +21,7 @@ public class exerc8 : MonoBehaviour
             int y = number1;
             do{
                 Debug.Log("usando do while" + y);
+                y++;
             }while(y <= number2);
         }else{
             for (int j = number2; j <= number1; j++){
@@ -34,6 +35,7 @@ public class exerc8 : MonoBehaviour
             int l = number2;
             do{
                 Debug.Log("usando do while" + l);
+                l++;
             }while(l <= number1);
         }
     }
