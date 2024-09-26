@@ -40,7 +40,7 @@ public class ejerc5mejor : MonoBehaviour
         if(items[1] < maxQuantity){
             items[1]= items[1] + 1;
         }else{
-        Debug.LogWarning("You have enough wood resources");
+        Debug.LogWarning("You have enough stone resources");
 
         }
     }
