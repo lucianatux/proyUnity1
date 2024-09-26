@@ -23,10 +23,14 @@ public class Ejercicio3 : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.K)){
             killEnemies();
+        }else if(Input.GetKeyDown(KeyCode.L)){
+            Debug.Log($"Current Level: {_currentLevel}.Current Experience: {_currentExperience}");
+
         }
     }
     private void killEnemies()
     {
+        Debug.Log($"Current Level before kill: {_currentLevel}.Current Experience: {_currentExperience}");
 
         if (enemyTokill < 0)
         {
@@ -40,6 +44,8 @@ public class Ejercicio3 : MonoBehaviour
         for (int i = 0; i < enemyTokill; i++)
         {
             _currentExperience += expEnemy;
+                    Debug.Log($"Current level after each enemy: {_currentLevel}.Current Experience: {_currentExperience}");
+
 
             if (_currentExperience >= expToLevelUp)
             {
